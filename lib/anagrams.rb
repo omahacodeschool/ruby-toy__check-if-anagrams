@@ -4,15 +4,15 @@ def anagrams?(str1, str2)
     x=word_first.count
     y=word_second.count
     if x != y
-        puts "not anagrams"
+        return false
     else
         z=word_first.map {|i| word_second.include?(i) }
         if z.include?(false)
-            puts "not anagrams"
+            return false
         else 
-            puts "anagrams"
+            return true
         end
     end
 end
 
-anagrams?("chiser", "search")
+anagrams?("chaser", "search")
