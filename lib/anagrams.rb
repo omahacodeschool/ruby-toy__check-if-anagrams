@@ -13,9 +13,9 @@ def anagrams?(str1, str2)
 #    a = make_string1_alphabetical(str1)
 #    b = make_string2_alphabetical(str2)
     #compared alphabetically sorted strings
-    if str1.chars.sort.join == str2.chars.sort.join
+    if str1.chars.sort.join.downcase == str2.chars.sort.join.downcase
        return true  
-    elsif str1.chars.sort.join != str2.chars.sort.join
+    elsif str1.chars.sort.join.downcase != str2.chars.sort.join.downcase
        return false
     end
 end
