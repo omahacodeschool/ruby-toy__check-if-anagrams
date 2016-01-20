@@ -1,7 +1,8 @@
 def anagrams?(str1, str2)
 if str1.sum == str2.sum then
-       puts 'True' 
-else puts 'False'
+    return true 
+else 
+    return false
 end
 end
-anagrams?("cares","races")
+anagrams?("chaser","search")
